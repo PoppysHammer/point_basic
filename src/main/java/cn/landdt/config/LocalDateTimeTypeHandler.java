@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
  * @date: 2021/5/27 10:59
  */
 @Component
-@MappedTypes(LocalDateTime.class)
+@MappedTypes({LocalDateTime.class})
 @MappedJdbcTypes(value = JdbcType.DATE, includeNullJdbcType = true)
 public class LocalDateTimeTypeHandler extends BaseTypeHandler<LocalDateTime> {
 

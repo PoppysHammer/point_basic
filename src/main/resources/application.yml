@@ -5,7 +5,11 @@ spring:
   profiles:
     include: sharding
 
+
 management:
   health:
     db:
       enabled: false
+logging:
+  level:
+    cn.landdt: trace

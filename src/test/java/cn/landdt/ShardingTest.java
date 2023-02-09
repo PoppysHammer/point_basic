@@ -251,56 +251,56 @@ public class ShardingTest {
     @Resource
     private UserPointAccountInsertBatchService userPointAccountInsertBatchService;
 
-    @Test
-    public void ddd() {
-        List<UserPointAccountEntity> userPointAccountEntityList = new ArrayList<>() {{
-            add(new UserPointAccountEntity(null, "15555555555", 112323L, 1, new BigDecimal("111"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "354354", 112323L, 1, new BigDecimal("123"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "123213", 17823L, 1, new BigDecimal("122"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "3574", 78112323L, 1, new BigDecimal("35"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "134378", 1989L, 1, new BigDecimal("3445"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "9898", 454523L, 1, new BigDecimal("5454"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "354345", 1454323L, 1, new BigDecimal("567"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "15555555555", 112323L, 1, new BigDecimal("111"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "354354", 112323L, 1, new BigDecimal("123"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "123213", 17823L, 1, new BigDecimal("122"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "3574", 78112323L, 1, new BigDecimal("35"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "134378", 1989L, 1, new BigDecimal("3445"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "9898", 454523L, 1, new BigDecimal("5454"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "354345", 1454323L, 1, new BigDecimal("567"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "15555555555", 112323L, 1, new BigDecimal("111"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "354354", 112323L, 1, new BigDecimal("123"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "123213", 17823L, 1, new BigDecimal("122"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "3574", 78112323L, 1, new BigDecimal("35"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "134378", 1989L, 1, new BigDecimal("3445"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "9898", 454523L, 1, new BigDecimal("5454"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "354345", 1454323L, 1, new BigDecimal("567"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "15555555555", 112323L, 1, new BigDecimal("111"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "354354", 112323L, 1, new BigDecimal("123"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "123213", 17823L, 1, new BigDecimal("122"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "3574", 78112323L, 1, new BigDecimal("35"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "134378", 1989L, 1, new BigDecimal("3445"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "9898", 454523L, 1, new BigDecimal("5454"), LocalDateTime.now(), LocalDateTime.now()));
-            add(new UserPointAccountEntity(null, "354345", 1454323L, 1, new BigDecimal("567"), LocalDateTime.now(), LocalDateTime.now()));
-        }};
-        for (UserPointAccountEntity aLong : userPointAccountEntityList) {
-            try {
-                Thread.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            CompletableFuture.runAsync(() -> {
-                System.out.println(JSONObject.toJSONString(userPointAccountInsertBatchService.singleRequest(aLong)));
-            }).exceptionally((e) -> {
-                e.printStackTrace();
-                return null;
-            });
-        }
-        CountDownLatch countDownLatch = new CountDownLatch(1);
-        try {
-            countDownLatch.await();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+//    @Test
+//    public void ddd() {
+//        List<UserPointAccountEntity> userPointAccountEntityList = new ArrayList<>() {{
+//            add(new UserPointAccountEntity(null, "15555555555", 112323L, 1, new BigDecimal("111"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "354354", 112323L, 1, new BigDecimal("123"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "123213", 17823L, 1, new BigDecimal("122"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "3574", 78112323L, 1, new BigDecimal("35"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "134378", 1989L, 1, new BigDecimal("3445"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "9898", 454523L, 1, new BigDecimal("5454"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "354345", 1454323L, 1, new BigDecimal("567"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "15555555555", 112323L, 1, new BigDecimal("111"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "354354", 112323L, 1, new BigDecimal("123"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "123213", 17823L, 1, new BigDecimal("122"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "3574", 78112323L, 1, new BigDecimal("35"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "134378", 1989L, 1, new BigDecimal("3445"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "9898", 454523L, 1, new BigDecimal("5454"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "354345", 1454323L, 1, new BigDecimal("567"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "15555555555", 112323L, 1, new BigDecimal("111"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "354354", 112323L, 1, new BigDecimal("123"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "123213", 17823L, 1, new BigDecimal("122"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "3574", 78112323L, 1, new BigDecimal("35"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "134378", 1989L, 1, new BigDecimal("3445"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "9898", 454523L, 1, new BigDecimal("5454"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "354345", 1454323L, 1, new BigDecimal("567"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "15555555555", 112323L, 1, new BigDecimal("111"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "354354", 112323L, 1, new BigDecimal("123"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "123213", 17823L, 1, new BigDecimal("122"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "3574", 78112323L, 1, new BigDecimal("35"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "134378", 1989L, 1, new BigDecimal("3445"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "9898", 454523L, 1, new BigDecimal("5454"), LocalDateTime.now(), LocalDateTime.now()));
+//            add(new UserPointAccountEntity(null, "354345", 1454323L, 1, new BigDecimal("567"), LocalDateTime.now(), LocalDateTime.now()));
+//        }};
+//        for (UserPointAccountEntity aLong : userPointAccountEntityList) {
+//            try {
+//                Thread.sleep(10);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            CompletableFuture.runAsync(() -> {
+//                System.out.println(JSONObject.toJSONString(userPointAccountInsertBatchService.singleRequest(aLong)));
+//            }).exceptionally((e) -> {
+//                e.printStackTrace();
+//                return null;
+//            });
+//        }
+//        CountDownLatch countDownLatch = new CountDownLatch(1);
+//        try {
+//            countDownLatch.await();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//    }
 }
