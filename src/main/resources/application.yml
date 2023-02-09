@@ -1,0 +1,11 @@
+server:
+  port: 1110
+
+spring:
+  profiles:
+    include: sharding
+
+management:
+  health:
+    db:
+      enabled: false

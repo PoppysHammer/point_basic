@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f163f0d-3f38-45ac-a082-3f2f83247b09" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LA628usN5AihDfYxOrrkKLiE4M" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.31478968" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.landdt.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ShardingTest.ddd">
+    <configuration name="ShardingTest.abc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="point-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.landdt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.landdt" />
+      <option name="MAIN_CLASS_NAME" value="cn.landdt.ShardingTest" />
+      <option name="METHOD_NAME" value="abc" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShardingTest.ddd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="point-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.landdt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.landdt" />
+      <option name="MAIN_CLASS_NAME" value="cn.landdt.ShardingTest" />
+      <option name="METHOD_NAME" value="ddd" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShardingTest.money" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="point-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.landdt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.landdt" />
+      <option name="MAIN_CLASS_NAME" value="cn.landdt.ShardingTest" />
+      <option name="METHOD_NAME" value="money" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShardingTest.testBatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="point-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.landdt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.landdt" />
+      <option name="MAIN_CLASS_NAME" value="cn.landdt.ShardingTest" />
+      <option name="METHOD_NAME" value="testBatch" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShardingTest.testBatch1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="point-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.landdt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.landdt" />
+      <option name="MAIN_CLASS_NAME" value="cn.landdt.ShardingTest" />
+      <option name="METHOD_NAME" value="testBatch1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShardingTest.testBatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="point-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.landdt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.landdt" />
+      <option name="MAIN_CLASS_NAME" value="cn.landdt.ShardingTest" />
+      <option name="METHOD_NAME" value="testBatch" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ShardingTest.abc" />
+      <item itemvalue="JUnit.ShardingTest.money" />
+      <item itemvalue="JUnit.ShardingTest.testBatch" />
+      <item itemvalue="JUnit.ShardingTest.testBatch1" />
+      <item itemvalue="JUnit.ShardingTest.ddd" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ShardingTest.ddd" />
+        <item itemvalue="JUnit.ShardingTest.testBatch1" />
+        <item itemvalue="JUnit.ShardingTest.testBatch" />
+        <item itemvalue="JUnit.ShardingTest.testBatch" />
+        <item itemvalue="JUnit.ShardingTest.testBatch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f163f0d-3f38-45ac-a082-3f2f83247b09" name="Changes" comment="" />
+      <created>1675301329736</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675301329736</updated>
+      <workItem from="1675301331195" duration="2872000" />
+      <workItem from="1675304547425" duration="61621000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

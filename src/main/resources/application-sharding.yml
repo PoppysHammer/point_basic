@@ -1,0 +1,61 @@
+spring:
+  shardingsphere:
+    props:
+      sql:
+        show: true
+    datasource:
+      names: point-basic1,point-basic2
+      point-basic1:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/point_basic?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+        username: root
+        password: 88888888
+      point-basic2:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/point_basic?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+        username: root
+        password: Y%ket%w7
+    sharding:
+      tables:
+        user_point_account:
+          actual-data-nodes: point-basic$->{1..2}.user_point_account_$->{0..31}
+          # 主键生成策略（如果是自动生成的，在插入数据的sql中就不要传id，null也不行，直接插入字段中就不要有主键的字段）
+          key-generator:
+            # 对应的数据库表的主键
+            column: id
+            # 生成方式， 雪花模式
+            type: SNOWFLAKE
+          # 配置库分片策略
+          database-strategy:
+            # 行表达式
+            inline:
+              # 配置库分片的字段
+              sharding-column: id
+              # 配置库分片算法
+              algorithm-expression: point-basic$->{id % 2 +1}
+          # 配置表分片策略
+          table-strategy:
+            # 行表达式
+            inline:
+              # 配置表分片的字段
+              sharding-column: id
+              # 配置表分片算法
+              algorithm-expression: user_point_account_$->{id % 32}
+#        user_point_get:
+#          actual-data-nodes: point-basic.user_point_get_$->{0..9}
+#          # 主键生成策略（如果是自动生成的，在插入数据的sql中就不要传id，null也不行，直接插入字段中就不要有主键的字段）
+#          key-generator:
+#            # 对应的数据库表的主键
+#            column: id
+#            # 生成方式， 雪花模式
+#            type: SNOWFLAKE
+#          # 配置表分片策略
+#          table-strategy:
+#            # 行表达式
+#            inline:
+#              # 配置表分片的字段
+#              sharding-column: account_id
+#              # 配置表分片算法
+#              algorithm-expression: user_point_get_$->{account_id % 10}
